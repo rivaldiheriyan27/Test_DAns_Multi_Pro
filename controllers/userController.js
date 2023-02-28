@@ -27,20 +27,17 @@ class userController{
                 password,
                 user.password
             )
-            
-            console.log(validatePassword, "ini validasi password")
 
             // Check data apakah passwordnya sudah sama atau tidak
-
             if (!validatePassword) {
-                throw { name : `Email or Password is invalid`};
+                throw { name : `Username or Password is invalid`};
             }
 
             const payload = {
                 id: user.id,
             };
 
-            console.log(payload, " ini di login")
+            // console.log(payload, " ini di login")
 
             const token = signatureJwt(payload,secretKey);
             console.log(token)
@@ -91,7 +88,7 @@ class userController{
             res.status(201).json({
             statusCode:201,
             data:{
-                message: `new user with email ${dataInputRegister.username} has been successfully registered`,
+                message: `new user with Username ${dataInputRegister.username} has been successfully registered`,
                 accesToken:token
             }
             });
