@@ -1,0 +1,28 @@
+[
+    {
+        "description" : "Proggrammer",
+        "location" : "Jakarta",
+        "fullTime" : "True",
+        "UserId":1
+    },
+    {
+        "description" : "Data Analis",
+        "location" : "Jakarta",
+        "fullTime" : "False",
+        "UserId":1
+    },
+    {
+        "description" : "Proggrammer",
+        "location" : "Jakarta",
+        "fullTime" : "False",
+        "UserId":1
+
+    },
+    {
+        "description" : "Proggrammer",
+        "location" : "Surabaya",
+        "fullTime" : "True",
+        "UserId":1
+    }
+]
+   
